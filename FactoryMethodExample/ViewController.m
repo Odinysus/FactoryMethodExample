@@ -64,11 +64,18 @@
             break;
         }
     }
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定"
+                                                     style:UIAlertActionStyleCancel
+                                                   handler:^(UIAlertAction *  action) {
+                                                       
+                                                   }];
     if (flag) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"成功" message:@"数据合法" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:action];
         [self presentViewController:alert animated:YES completion:nil];
     } else {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"失败" message:@"数据不合法" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:action];
         [self presentViewController:alert animated:YES completion:nil];
     }
 }
