@@ -23,6 +23,7 @@
  */
 - (BOOL)isValid;
 
+- (void)setValue:(NSString *)string;
 
 
 @end

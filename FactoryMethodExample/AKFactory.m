@@ -7,27 +7,27 @@
 //
 
 #import "AKFactory.h"
-#import "AKLabel.h"
+#import "AKDatePick.h"
 #import "AKTextField.h"
 #import "AKBasicControl.h"
 
 @implementation AKFactory
 
-- (AKBasicControl *)controlWithType:(NSString *)type {
-    if ([type isEqualToString:@"label"]) {
-        return [[AKLabel alloc] init];
++ (AKBasicControl *)controlWithType:(NSString *)type {
+    if ([type isEqualToString:@"datePick"]) {
+        return [[AKDatePick alloc] init];
     } else if ([type isEqualToString:@"textField"]) {
         return [[AKTextField alloc] init];
     } else
         return [[AKBasicControl alloc] init];
 }
 
-- (AKBasicControl *)Label
++ (AKBasicControl *)datePick
 {
-    return [[AKLabel alloc] init];
+    return [[AKDatePick alloc] init];
 }
 
-- (AKBasicControl *)TextField
++ (AKBasicControl *)TextField
 {
     return [[AKTextField alloc] init];
 }

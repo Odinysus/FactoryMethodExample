@@ -8,13 +8,19 @@
 
 #import "AKTextField.h"
 
-@implementation AKTextField
+#define TEXT_FEIFLD 200
+@implementation AKTextField 
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        _contentText = [[UITextField alloc] init];
+        _contentText = [[UITextField alloc] initWithFrame:CGRectMake(60,  2, 200, 35)];
+        _contentText.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        _contentText.layer.borderWidth = 0.4f;
+//        _contentText.returnKeyType
+        _contentText.delegate = self;
+        [self addSubview:_contentText];
     }
     return self;
 }
@@ -32,5 +38,15 @@
 - (NSString *)getValue
 {
     return _contentText.text;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([_contentText isFirstResponder]){
+        [_contentText resignFirstResponder];
+        return YES;
+    }
+    return YES;
+    
 }
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70E3ADC1D756D5900805140 /* AKDatePick.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E3ADB1D756D5900805140 /* AKDatePick.m */; };
 		F7182AE61D7490F6001CF2A1 /* AKFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7182AE51D7490F6001CF2A1 /* AKFactory.m */; };
 		F76FF60A1D74725C000045D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76FF6091D74725C000045D1 /* main.m */; };
 		F76FF60D1D74725C000045D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76FF60C1D74725C000045D1 /* AppDelegate.m */; };
@@ -15,11 +16,12 @@
 		F76FF6151D74725C000045D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76FF6141D74725C000045D1 /* Assets.xcassets */; };
 		F76FF6181D74725C000045D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76FF6161D74725C000045D1 /* LaunchScreen.storyboard */; };
 		F7CD21AF1D753C82005C7042 /* AKBasicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD21AA1D753C82005C7042 /* AKBasicControl.m */; };
-		F7CD21B01D753C82005C7042 /* AKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD21AC1D753C82005C7042 /* AKLabel.m */; };
 		F7CD21B11D753C82005C7042 /* AKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD21AE1D753C82005C7042 /* AKTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F70E3ADA1D756D5900805140 /* AKDatePick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDatePick.h; sourceTree = "<group>"; };
+		F70E3ADB1D756D5900805140 /* AKDatePick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDatePick.m; sourceTree = "<group>"; };
 		F7182AE41D7490F6001CF2A1 /* AKFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFactory.h; sourceTree = "<group>"; };
 		F7182AE51D7490F6001CF2A1 /* AKFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKFactory.m; sourceTree = "<group>"; };
 		F76FF6051D74725C000045D1 /* FactoryMethodExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactoryMethodExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,8 +36,6 @@
 		F76FF6191D74725C000045D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7CD21A91D753C82005C7042 /* AKBasicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKBasicControl.h; sourceTree = "<group>"; };
 		F7CD21AA1D753C82005C7042 /* AKBasicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKBasicControl.m; sourceTree = "<group>"; };
-		F7CD21AB1D753C82005C7042 /* AKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLabel.h; sourceTree = "<group>"; };
-		F7CD21AC1D753C82005C7042 /* AKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLabel.m; sourceTree = "<group>"; };
 		F7CD21AD1D753C82005C7042 /* AKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTextField.h; sourceTree = "<group>"; };
 		F7CD21AE1D753C82005C7042 /* AKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,10 +99,10 @@
 			children = (
 				F7CD21A91D753C82005C7042 /* AKBasicControl.h */,
 				F7CD21AA1D753C82005C7042 /* AKBasicControl.m */,
-				F7CD21AB1D753C82005C7042 /* AKLabel.h */,
-				F7CD21AC1D753C82005C7042 /* AKLabel.m */,
 				F7CD21AD1D753C82005C7042 /* AKTextField.h */,
 				F7CD21AE1D753C82005C7042 /* AKTextField.m */,
+				F70E3ADA1D756D5900805140 /* AKDatePick.h */,
+				F70E3ADB1D756D5900805140 /* AKDatePick.m */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 			files = (
 				F7CD21AF1D753C82005C7042 /* AKBasicControl.m in Sources */,
 				F76FF6101D74725C000045D1 /* ViewController.m in Sources */,
-				F7CD21B01D753C82005C7042 /* AKLabel.m in Sources */,
 				F7182AE61D7490F6001CF2A1 /* AKFactory.m in Sources */,
 				F76FF60D1D74725C000045D1 /* AppDelegate.m in Sources */,
+				F70E3ADC1D756D5900805140 /* AKDatePick.m in Sources */,
 				F7CD21B11D753C82005C7042 /* AKTextField.m in Sources */,
 				F76FF60A1D74725C000045D1 /* main.m in Sources */,
 			);

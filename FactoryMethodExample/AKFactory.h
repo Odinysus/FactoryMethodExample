@@ -29,7 +29,7 @@
  *
  *  @return subclass which depend on type.
  */
-- (AKBasicControl *)controlWithType:(NSString *)type;
++ (AKBasicControl *)controlWithType:(NSString *)type;
 
 #pragma mark simple factory
 /**
@@ -37,6 +37,6 @@
  *
  *  @return the concrete suclass what u call
  */
-- (AKBasicControl *)TextField;
-- (AKBasicControl *)Label;
++ (AKBasicControl *)TextField;
++ (AKBasicControl *)datePick;
 @end
