@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "AKFactory.h"
 #import "AKBasicControl.h"
+#import "AKTextFieldFactory.h"
+#import "AKDatePickFactory.h"
+#import "AKSwitchFactory.h"
 
 #define SIMPLE_FACTORY_WAY 1
 @interface ViewController ()
@@ -25,25 +28,21 @@
     
     // static configuration
     NSArray *configurations = @[@{@"type":@"datePick", @"title":@"日期"},
-                                @{@"type":@"textField", @"title":@"姓名"}];
+                                @{@"type":@"textField", @"title":@"姓名"},
+                                @{@"type":@"switch", @"title":@"贷款"}];
     int i = 0;
     CGFloat width = self.backView.frame.size.width;
     for (NSDictionary *configuration in configurations) {
         
         AKBasicControl *control;
-        /**
-         *  if you want to use another way to create control . please modify SIMPLE_FACTORY_WAY to other value but not 
-         */
-        if (SIMPLE_FACTORY_WAY == 1) {
-            control  = [AKFactory controlWithType:configuration[@"type"]];
-
-        } else {
+       
             if ([configuration[@"type"] isEqualToString:@"datePick"]) {
-                control = [AKFactory datePick];
+                control = [AKDatePickFactory makeControl];
             } else if ([configuration[@"type"] isEqualToString:@"textField"]) {
-                control =[AKFactory TextField];
+                control = [AKTextFieldFactory makeControl];
+            } else if ([configuration[@"type"] isEqualToString:@"switch"]) {
+                control = [AKSwitchFactory makeControl];
             }
-        }
         control.titleLabel.text = configuration[@"title"];
         control.frame = CGRectMake(0, i * 50, width * 0.9, 50);
         [self.backView addSubview:control];

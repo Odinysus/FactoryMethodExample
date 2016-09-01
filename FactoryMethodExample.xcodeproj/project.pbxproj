@@ -17,6 +17,10 @@
 		F76FF6181D74725C000045D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76FF6161D74725C000045D1 /* LaunchScreen.storyboard */; };
 		F7CD21AF1D753C82005C7042 /* AKBasicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD21AA1D753C82005C7042 /* AKBasicControl.m */; };
 		F7CD21B11D753C82005C7042 /* AKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD21AE1D753C82005C7042 /* AKTextField.m */; };
+		F7DAE5221D7866E800758845 /* AKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DAE5211D7866E800758845 /* AKSwitch.m */; };
+		F7DAE5291D78682C00758845 /* AKTextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DAE5281D78682C00758845 /* AKTextFieldFactory.m */; };
+		F7DAE52C1D78695C00758845 /* AKDatePickFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DAE52B1D78695C00758845 /* AKDatePickFactory.m */; };
+		F7DAE52F1D7869BC00758845 /* AKSwitchFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DAE52E1D7869BC00758845 /* AKSwitchFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		F7CD21AA1D753C82005C7042 /* AKBasicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKBasicControl.m; sourceTree = "<group>"; };
 		F7CD21AD1D753C82005C7042 /* AKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTextField.h; sourceTree = "<group>"; };
 		F7CD21AE1D753C82005C7042 /* AKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTextField.m; sourceTree = "<group>"; };
+		F7DAE5201D7866E800758845 /* AKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSwitch.h; sourceTree = "<group>"; };
+		F7DAE5211D7866E800758845 /* AKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSwitch.m; sourceTree = "<group>"; };
+		F7DAE5271D78682C00758845 /* AKTextFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTextFieldFactory.h; sourceTree = "<group>"; };
+		F7DAE5281D78682C00758845 /* AKTextFieldFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTextFieldFactory.m; sourceTree = "<group>"; };
+		F7DAE52A1D78695C00758845 /* AKDatePickFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDatePickFactory.h; sourceTree = "<group>"; };
+		F7DAE52B1D78695C00758845 /* AKDatePickFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDatePickFactory.m; sourceTree = "<group>"; };
+		F7DAE52D1D7869BC00758845 /* AKSwitchFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSwitchFactory.h; sourceTree = "<group>"; };
+		F7DAE52E1D7869BC00758845 /* AKSwitchFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSwitchFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 				F76FF60F1D74725C000045D1 /* ViewController.m */,
 				F7182AE41D7490F6001CF2A1 /* AKFactory.h */,
 				F7182AE51D7490F6001CF2A1 /* AKFactory.m */,
+				F7DAE5231D78679400758845 /* Factory */,
 				F7CD21A81D753C82005C7042 /* Products */,
 				F76FF6111D74725C000045D1 /* Main.storyboard */,
 				F76FF6141D74725C000045D1 /* Assets.xcassets */,
@@ -103,8 +116,23 @@
 				F7CD21AE1D753C82005C7042 /* AKTextField.m */,
 				F70E3ADA1D756D5900805140 /* AKDatePick.h */,
 				F70E3ADB1D756D5900805140 /* AKDatePick.m */,
+				F7DAE5201D7866E800758845 /* AKSwitch.h */,
+				F7DAE5211D7866E800758845 /* AKSwitch.m */,
 			);
 			path = Products;
+			sourceTree = "<group>";
+		};
+		F7DAE5231D78679400758845 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAE5271D78682C00758845 /* AKTextFieldFactory.h */,
+				F7DAE5281D78682C00758845 /* AKTextFieldFactory.m */,
+				F7DAE52A1D78695C00758845 /* AKDatePickFactory.h */,
+				F7DAE52B1D78695C00758845 /* AKDatePickFactory.m */,
+				F7DAE52D1D7869BC00758845 /* AKSwitchFactory.h */,
+				F7DAE52E1D7869BC00758845 /* AKSwitchFactory.m */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CD21AF1D753C82005C7042 /* AKBasicControl.m in Sources */,
+				F7DAE5291D78682C00758845 /* AKTextFieldFactory.m in Sources */,
 				F76FF6101D74725C000045D1 /* ViewController.m in Sources */,
+				F7DAE52C1D78695C00758845 /* AKDatePickFactory.m in Sources */,
 				F7182AE61D7490F6001CF2A1 /* AKFactory.m in Sources */,
+				F7DAE5221D7866E800758845 /* AKSwitch.m in Sources */,
 				F76FF60D1D74725C000045D1 /* AppDelegate.m in Sources */,
+				F7DAE52F1D7869BC00758845 /* AKSwitchFactory.m in Sources */,
 				F70E3ADC1D756D5900805140 /* AKDatePick.m in Sources */,
 				F7CD21B11D753C82005C7042 /* AKTextField.m in Sources */,
 				F76FF60A1D74725C000045D1 /* main.m in Sources */,
