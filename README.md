@@ -24,9 +24,9 @@ more detail please go my [blog](http://www.jianshu.com/p/b811774ffef1).
    	@end
 2. 为每一个产品类写一个生产方法.这种方法将原本的判断逻辑延迟到了客户端实现.
 
-   	@interface AKFactory : NSObject
-	   - (AKBasicControl *)TextField;
-   	- (AKBasicControl *)Button;
-   	@end
+   	 @interface AKFactory : NSObject
+	 - (AKBasicControl *)TextField;
+   	 - (AKBasicControl *)Button;
+   	 @end
 更详细的内容请移步到我的[博客](http://www.jianshu.com/p/b811774ffef1).
 
