@@ -16,7 +16,7 @@
  */
 @protocol AKFactoryProtocol
 
-- (AKBasicControl *)makeControl;
++ (AKBasicControl *)makeControl;
 
 @end
 
