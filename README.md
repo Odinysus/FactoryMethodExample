@@ -13,8 +13,9 @@ assume there are some control which be create by a key, "type". And you don't th
     	- (AKBasicControl *)TextField;
     	- (AKBasicControl *)Button;
     	@end
-      
-more detail please go my [blog](http://www.jianshu.com/p/b811774ffef1).
+
+modify the Marco  SIMPLE_FACTORY_WAY 1 to first way and 2 to scond way.  
+more detail please go to my [blog](http://www.jianshu.com/p/b811774ffef1).
 
 假设客户端的配置应该由后台配置,我们通过这个配置来生成对应的表单.每一个表单的控件类型都由一个唯一标识符type控制.让type决定创建对应的控件对象.在这个项目中,我会使用静态配置来展示简单工厂模式和工厂方法模式.
 简单工厂有两种方法实现:  
@@ -31,5 +32,6 @@ more detail please go my [blog](http://www.jianshu.com/p/b811774ffef1).
      - (AKBasicControl *)Button;
      @end
 
+修改宏SIMPLE_FACTORY_WAY为1,使用第一种方法. 2使用第二种方法
 更详细的内容请移步到我的[博客](http://www.jianshu.com/p/b811774ffef1).
 
